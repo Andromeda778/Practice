@@ -85,7 +85,7 @@ def test_pic():
     predictions = model_cnn.predict(pics)
     second = time.time()
     with open('logs.txt', 'a', encoding='utf-8') as file:
-        result_text = "Наиболее вероятный вид: " +str(predictions)
+        result_text = "Наиболее вероятный вид:" +str(predictions)
         result_okno.set(result_text)
         print("Результат вычисления: " +str(predictions), file=file)
         okno.set("Готово!")
